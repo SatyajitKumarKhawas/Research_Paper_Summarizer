@@ -5,7 +5,7 @@ from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
 
 # Load API key
-load_dotenv()
+
 
 # Initialize model
 groq_api_key = st.secrets["GROQ_API_KEY"]
