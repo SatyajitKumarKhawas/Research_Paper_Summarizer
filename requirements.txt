@@ -1,4 +1,6 @@
-streamlit>=1.32.0
-langchain>=0.1.16
-langchain-groq>=0.0.1
-python-dotenv>=1.0.1
+python
+numpy
+streamlit
+langchain
+langchain-groq
+python-dotenv
