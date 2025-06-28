@@ -8,10 +8,13 @@ from langchain_core.prompts import PromptTemplate
 load_dotenv()
 
 # Initialize model
+groq_api_key = st.secrets["GROQ_API_KEY"]
+
 model = ChatGroq(
-    groq_api_key=os.getenv("GROQ_API_KEY"),
+    groq_api_key=groq_api_key,
     model_name="llama3-70b-8192"
 )
+
 
 st.set_page_config(page_title="📚 Research Paper Explainer", layout="centered")
 st.title("🧠 AI-Powered Research Paper Explainer")
